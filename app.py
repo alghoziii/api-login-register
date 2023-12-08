@@ -83,6 +83,10 @@ def token_required(f):
 
     return decorated
 
+@app.route('/', methods=['GET','POST'])
+def default_route():
+    return jsonify({'message': 'Success fetching the API'}), 200
+
 # API Register
 @app.route('/auth/register', methods=['POST'])
 def register():
