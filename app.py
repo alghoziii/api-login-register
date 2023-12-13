@@ -156,7 +156,9 @@ def login():
     return jsonify({
         'success': True,
         'message': 'Sukses login',
-        'data': {'token': token}
+        'data': {
+            'token': token,
+            'User_Id': User_Id}
     }), 200
 
 @app.route('/user/details', methods=['GET'])
