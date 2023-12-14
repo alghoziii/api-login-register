@@ -57,7 +57,7 @@ This repository contains the implementation of the login and registration API fo
       "success": true,
       "message": "Sukses login",
       "data": {
-        "User_Id : "User_Id",
+        "User_Id" : "User_Id",
         "token": "JWT_TOKEN"
       }
     }
